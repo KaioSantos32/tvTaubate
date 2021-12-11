@@ -162,7 +162,7 @@ main{
 .rodape__social{
     display: flex;
     justify-content: space-around;
-    padding: 5% 0;
+    padding: 25px 0;
 }
 
 .rodape__navegacao{
