@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--
+            Importando fontes:
+        -->
+        
+        <link rel= "stylesheet" href="{{ url_for('static', filename='css/A_index.css') }}">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" type="image/jpg" href='../../assets/img/favicon.ico'>
+        
+        {% block head %} {% endblock %}
+    </head>
+    
+    <body>        
+        {% include "partials/header.html" %}
+
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+        {% include "partials/rodape_governo.html" %}
+
+
+    </body>
+
+    
+
+    
+</html>
