@@ -11,5 +11,3 @@
     <span> | </span>
   </h3>
 </div>
-
-Site: 
