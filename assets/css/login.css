@@ -1,0 +1,118 @@
+.form__registro{
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    
+    height: 400px;
+
+    margin: 20px auto ;
+    margin-top: 30px;
+
+    text-align: center;   
+    
+    padding: 20px 15px;    
+    
+    width:90%;
+
+}
+
+.label{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+
+.form__registro-titulo{
+    padding: 15px 0;
+
+    font-size: 1.7rem;
+    font-weight: 700;
+
+	
+    margin-bottom: 15px;
+}
+
+.form__registro-input{
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.3rem;
+
+    height: 30px;
+    
+    margin:10px 0;
+
+    padding: 5px 0;
+
+    text-align: center;
+    
+    width: 90%;
+}
+
+.form__registro-link{
+     margin: 15px 0;
+    text-transform: capitalize;    
+    text-decoration: underline;
+    
+}
+
+.form__registro-link a{
+    color:rgb(74, 74, 255);
+    font-size: 1.4rem;
+}
+
+.form__registro-botao{
+    background-color: #C4C4C4;
+
+    border: none;
+    border-radius: 10px;
+    
+    font-size: 1.4rem;
+
+    margin-top: 15px;
+
+    padding: 5px;
+
+    width: 100%;
+}
+
+
+@media screen and (min-width:768px){
+
+    .form__registro{
+        margin-top: 80px;
+    }
+
+    .form__registro-botao{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+
+    .form__input{
+        height: 35px;
+    }
+
+    .links__form{
+        margin-top: 40px;
+    }
+
+
+    .form__registro-link a{
+        font-size: 1.3rem;
+    }
+    
+    .form__registro{
+        max-width: 800px;
+        max-height: 550px;
+        padding: 20px 40px 40px 40px;
+    }   
+
+    .form__registro-botao{
+        max-width: 50%;
+        margin-top: 30px;
+
+    }
+
+}
