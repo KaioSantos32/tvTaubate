@@ -1,17 +1,28 @@
 /* CABEÇALHO */
 *{
-    font-family: "Quicksand", sans-serif;
+    font-family: "Arial", sans-serif;
 
 }
+
+main{
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    main{
+        margin: 0;
+
+    }
+}
+
 .cabecalho{
-    background-color: #7E8A99;
-    
+    background-color: #7E8A99;    
+    height: 60px;    
+}
+
+.container{
     display: flex;
-
-    height: 60px;
-
     justify-content: space-around;
-    
 }
 
 #imagem-feed{
@@ -24,19 +35,42 @@
     padding: 10px 0;
 }
 
+@media screen and (min-width: 975px){
+    .container{
+        max-width: 975px;
+    }
+}
+
 /* PERFIL */
 
 .perfil__info{
     height: 230px;
 }
 
-.perfil__info-imagem-de-fundo{
-    width: 100vw;
-    max-height: 250px;
-    filter: blur(2px);
-    position: absolute;
-    top: 60px;
+@media screen and (min-width: 975px){
+    .perfil__info{
+        max-width: 975px;
+        margin: 0 auto;
+    }
 }
+
+
+
+.imagem__fundo{
+    background-image: url("../img/img_acoes_ilustrativas/wallArt.jpg");
+    
+    background-size: cover;
+    
+    filter: blur(2px);
+    
+    height: 250px;
+    
+    position: absolute;
+
+    top: 60px;
+    width: 100vw;
+}
+
 
 .perfil__info-conteudo{
     position: relative;
@@ -86,48 +120,112 @@
     font-weight: lighter;
 }
 
+@media screen and (min-width: 768px){
+    .imagem__fundo {
+        object-fit: fill;
+    }
+
+    .perfil__info-foto-perfil{
+        height: 140px;
+        
+        margin-right: 50px;
+
+        left: 40px;
+
+        position: relative;
+
+        width: 100px;
+
+    }
+    
+    .perfil__info-nome-perfil{
+        font-size: 3rem;
+
+        margin-bottom: 40px;
+
+        left: 40px;
+
+        position: relative;
+
+    }
+    
+    .perfil__info-seguidores, .perfil__info-publicacoes{
+        font-size:2rem;
+
+        left: 40px;
+
+        position: relative;
+
+    }
+    
+    
+}
+
+@media screen and (min-width: 900px){
+
+    .imagem__fundo {
+        left: 50%;
+        transform: translateX(-50%);
+        
+        max-width: 975px;
+        
+    }
+    
+}
+
+
+
+
 /* DESCRIÇÃO DE PERFIL */
 
 .descricao__perfil{
-    background-color: #7E8A99;
+    align-items: center;
+    
+    background-color: #7E8A99;    
 
     height: 200px;
+
+    justify-content: center;
+
     padding: 0 20px; 
+
     margin-bottom: 70px;  
     
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
 }
 
 .atividade__principal{
     color: var(--branco-gelo);
 
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    padding: 20px 0 0 25px ;
 }
 
 .atividade__principal-descricao{
     color: var(--branco-gelo);
 
     font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
     font-weight: lighter;
 
     margin-bottom: 20px;
 
     min-height: 40px;
     max-height: 70px;
-
-    padding-left: 25px;
+    
+    padding: 0 25px 0 35px;
 
 }
 
 .tipo__trabalho{
     display: flex;
-    padding-bottom: 30px;
-    justify-content: space-around;
+
+    justify-content: flex-start;
+
     margin: 0 auto;
+
+    padding: 0 0 30px 15px;
 
 }
 
@@ -158,6 +256,34 @@
     width: 60px;
 }
 
+@media screen and (min-width: 768px){
+    .atividade__principal-descricao{
+        font-size: 1.5rem
+    }
+
+    .tipo__trabalho-texto{
+        font-size: 1.5rem;
+    }
+
+    .tipo__trabalho-tag{
+        font-size: 1.3rem;
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 975px){
+    
+    .descricao__perfil{
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .descricao__perfil{
+        max-width: 975px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+}
 /*  Titulos das POSTAGENS */
 
 .header__postagens{
@@ -190,6 +316,27 @@
     padding: 5px;
 }
 
+@media screen and (min-width: 768px){
+    
+    .header__postagens-tags{
+        font-size: 1.7rem;
+        width: 150px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    .header__postagens{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        max-width: 975px;
+        margin: 0 auto;
+    }
+}
+
+
 /* postagens feitas */
 
 .postagens__feitas{
@@ -205,16 +352,43 @@
 
     padding-top: 50px;
 
+    width: 100%;
     
 }
 
 .conteudo{
     width: 180px;
-    height: 120px;
+    height: 130px;
+
+    background-size: contain;
 
     border-radius: 5px;
 
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px){
+    .postagens__feitas{
+        grid-template-columns: auto auto auto;
+        
+        max-width: 975px;
+        margin: 0 auto;
+        
+        border-radius: 5px;
+    }
+    
+    .conteudo {
+        width: 210px;
+        height: 150px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){
+    .conteudo {
+        width: 290px;
+        height: 210px;
+    }
+}
 
