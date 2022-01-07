@@ -56,9 +56,7 @@ main{
 
 
 
-.imagem__fundo{
-    background-image: url("../img/img_acoes_ilustrativas/wallArt.jpg");
-    
+.imagem__fundo img{    
     background-size: cover;
     
     filter: blur(2px);
@@ -121,8 +119,11 @@ main{
 }
 
 @media screen and (min-width: 768px){
-    .imagem__fundo {
-        object-fit: fill;
+    .imagem__fundo img  {
+        object-fit: cover;
+        max-width: 975px;
+        left: 50%;
+        top: -19px;
     }
 
     .perfil__info-foto-perfil{
