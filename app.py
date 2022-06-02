@@ -17,11 +17,11 @@ class User:
 # Criando conexao com o banco de dados
 
 
-cluster = MongoClient("mongodb://root1:root123@cluster0-shard-00-00.yrzqf.mongodb.net:27017,cluster0-shard-00-01.yrzqf.mongodb.net:27017,cluster0-shard-00-02.yrzqf.mongodb.net:27017/tvTaubate?ssl=true&replicaSet=atlas-b8b56u-shard-0&authSource=admin&retryWrites=true&w=majority")
+cluster = MongoClient("mongodb://[username]:[password]@cluster0-shard-00-00.yrzqf.mongodb.net:27017,cluster0-shard-00-01.yrzqf.mongodb.net:27017,cluster0-shard-00-02.yrzqf.mongodb.net:27017/tvTaubate?ssl=true&replicaSet=atlas-b8b56u-shard-0&authSource=admin&retryWrites=true&w=majority")
 #cluster = MongoClient("localhost", 27017)
 
-db=cluster.tvTaubate
-collection = db.usuarios
+db=cluster.[dbname]
+collection = db.[dbCollection]
 
 
 
