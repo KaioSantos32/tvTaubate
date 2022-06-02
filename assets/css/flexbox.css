@@ -1,0 +1,38 @@
+/* Ajustando ao cabeçalho para flex onde é necessario */
+.cabecalho__principal .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cabecalho__principal-nav{
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+
+    .cabecalho__principal .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+
+    .cabecalho__principal-nav{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .cabecalho__principal-nav-link{
+        border: 1px solid var(--cinza-claro);
+        border-radius: 5px;
+        justify-content: space-around;
+        margin-left: 10px;
+
+    }
+	
+
+}
+
+
+

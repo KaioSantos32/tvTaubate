@@ -1,0 +1,61 @@
+.rodape{
+	padding: 15px 10px;
+	background-color: var(--branco-gelo);
+
+}
+
+.rodape__social{
+    display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+	
+	
+}
+
+.regua_governo{
+	max-width: 300px;
+}	
+
+@media screen and (min-width: 768px){
+	.rodape__social{
+		flex-flow: row wrap;
+	}
+	.regua_governo{
+		max-width: 300px;
+	}
+
+	
+}
+
+@media screen and (min-width: 1500px){
+	.regua_governo{
+		max-width: 300px;
+		align-items: center;
+	}
+}
+
+
+.rodape__navegacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.rodape__link{
+    font-size: 1rem;
+    padding: 30px 5%;
+
+}
+
+.rodape__a{
+	color: white;
+}
+
+@media screen and (min-width:768px){
+
+
+	.rodape__link .rodape__a{
+		font-size: 1.4rem;
+	}
+}

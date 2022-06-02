@@ -1,0 +1,76 @@
+.form__registro{
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    
+    
+    margin: 20px auto ;
+    margin-top: 30px;
+
+    text-align: center;   
+    
+    padding: 20px 15px;    
+    
+    width:90%;
+
+}
+
+.form__registro-titulo{
+    padding: 15px 0;
+
+    font-size: 1.7rem;
+    font-weight: 700;
+
+	border-bottom: 1px solid var(--fonte-cinza-claro);
+    margin-bottom: 15px;
+}
+
+.label{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.form__registro-input{
+    width: 90%;
+    height: 30px;
+
+    margin:10px 0;
+
+    border-radius: 10px;
+}
+
+.form__registro-link{
+     margin: 15px 0;
+    text-transform: capitalize;    
+    text-decoration: underline;
+    
+}
+
+.form__registro-link a{
+    color:rgb(74, 74, 255);
+}
+
+.form__registro-botao{
+    width: 100%;
+    
+    margin-top: 15px;
+    padding: 5px;
+
+    font-size: 1.4rem;
+
+}
+
+@media screen and (min-width:1024px){
+    .form__registro{
+        max-width: 800px;
+        min-height: 500px;
+        padding: 20px 40px 40px 40px;
+    }   
+
+    .form__registro-botao{
+        width: 50%;
+    }
+
+    .form__registro-titulo{
+        margin-bottom: 50px;
+    }
+}

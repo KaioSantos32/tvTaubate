@@ -1,0 +1,183 @@
+/** folha de estilos apenas, posições de flexbox é separado */
+
+body{
+	background-color: var(--azul-escuro-body);
+
+	font-family: 'Open Sans',Arial,sans-serif;	
+}
+
+
+
+
+
+/* COMEÇANDO O MAIN */
+
+main{
+	margin: 0 auto;
+	max-width: 1400px;
+
+
+	width: 100vw;
+}
+
+@media screen and (min-width:768px){
+	main{
+		min-height: calc(100vh - 92px - 170px);
+	}
+}
+
+
+
+
+/* INICIO SECTION CHAMADA */
+
+.chamada{
+	text-align: center;
+	margin: 40px 0;
+	padding: 0px 15px
+}
+
+.chamada__titulo{
+	margin-bottom: 15px;
+	font-size: 2rem;
+	color:white;
+}
+
+.chamada__subtitulo{
+	margin-bottom: 25px;
+	font-size: 1.6rem;
+	color:white;
+}
+
+.chamada__texto-container{
+	padding: 0 20px;
+	margin-bottom: 35px;
+}
+
+.chamada__texto{
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+	color:white;
+	font-weight: lighter;
+}
+
+.chamada__link-cadastro, .descubra-mais__botao{
+	padding: 10px 50px;
+	border: 1px solid var(--fonte-cinza-claro);
+	border-radius: 5px;
+
+	background-color: var(--azul-escuro-botao-chamada);
+	color: white;
+}
+
+
+
+@media screen and (min-width:768px){
+	
+	.chamada{		
+		background-image: url("../img/background_img.png");
+		background-size: cover;
+		max-width: 100%;
+		margin:0 ;
+		padding: 30px 0;
+
+		width: 100vw;
+		height: 400px;
+
+		font-size: 2rem
+	}
+
+	.chamada__titulo{
+		margin-bottom: 30px;
+		font-size: 2rem;
+	}
+
+	.chamada__subtitulo{
+		margin-bottom: 40px;
+		font-size: 1.7rem;
+		color:white;
+	}
+	.chamada__texto{
+		margin-bottom: 30px;
+		font-size: 1.4rem;
+		font-weight: lighter;
+	}
+
+	.chamada__texto-container{
+		
+		background-color: rgba(0, 0, 0, 0.789); 
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		margin: auto auto;
+		margin-bottom: 40px;
+		border: 3px solid #f1f1f1;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+
+	.chamada__link-cadastro, .descubra-mais__botao{
+		margin-top: 50px;
+	}
+}
+
+/* FIM SECTION CHAMADA */
+
+
+/* INICIO SECTION DESCUBRA */ 
+
+.descubra{
+	background-color: #44515f;
+	padding: 15px 20px;
+
+}
+.descubra__lista-item{
+	margin-bottom: 60px;
+}
+
+.item__titulo{
+	color: var(--cinza-claro);
+	font-size: 2rem;
+	padding-bottom:	5px;
+
+	border-bottom: 1px solid var(--fonte-cinza-claro);
+}
+
+.item__texto{
+	margin: 17px 0;
+	font-size: 1.2rem;
+	padding: 0 20px;
+	color: var(--cinza-claro);
+}
+
+.descubra-mais__botao{
+	margin: 0 auto;
+
+}
+
+@media screen and (min-width:768px){
+	.descubra{
+		min-height: 650px;
+	}
+	.descubra__lista-item{
+		margin-bottom: 70px;
+		padding-top: 30px;
+	}
+
+	.item__titulo{
+		font-size: 2.7rem;
+	}
+
+	.item__texto{
+		font-size: 1.7rem;
+	}
+
+	.descubra-mais__botao{
+		padding:15px 30px;
+		font-size: 1.7rem;
+	}
+	
+}
+
+/* FIM SECTION DESCUBRA */ 
+

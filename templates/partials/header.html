@@ -1,0 +1,20 @@
+<header class='cabecalho__principal'>        
+    <div class="container">
+        <h1 class='cabecalho__titulo'>
+            <a href="{{ url_for('index') }}" >RG Cultural</a>
+        </h1>
+        <nav>
+            <ul class='cabecalho__principal-nav'>
+
+                <li><a href="{{ url_for('index') }}" class='cabecalho__principal-nav-link'>Inicio</a></li>
+                <li><a href="{{ url_for('login') }}" class='cabecalho__principal-nav-link'>Entrar</a></li>
+                <li><a href="{{ url_for('registrar') }}" class='cabecalho__principal-nav-link'>Registrar</a></li>
+                <li><a href="{{ url_for('descobrir') }}" class='cabecalho__principal-nav-link'>Descobrir</a></li>
+                <li><a href="{{ url_for('sobre_nos') }}" class='cabecalho__principal-nav-link'>Sobre Nós</a></li>
+                <li><a href="{{ url_for('logout') }}" class='cabecalho__principal-nav-link'>Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+

@@ -1,0 +1,34 @@
+.container{
+	width: 94%;
+	margin: 0 auto;
+	
+}
+
+.cabecalho__principal{
+	background-color: var(--branco-gelo);
+	padding: 20px 0;
+	
+}
+
+.cabecalho__titulo{
+	font-weight: 700;
+	font-size: 2.5em;
+	font-family: 'Quicksand', sans-serif;
+
+	margin-bottom: 20px;
+}
+
+.cabecalho__principal-nav-link {
+	border-bottom: 1px solid var(--fonte-cinza-claro);
+
+	color: var(--fonte-cinza);
+
+	display: block; /* display block é necessario para que cada item ocupe uma linha inteira, e o cabeçalho nao se quebre */
+
+	font-size: 1.6rem;
+	
+	margin-bottom: 10px;
+
+	padding: 10px;
+
+}
