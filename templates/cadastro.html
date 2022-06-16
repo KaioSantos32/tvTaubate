@@ -1,0 +1,56 @@
+{% extends "iniciais/templateIndex.html" %}
+{% block head %}
+<link rel= "stylesheet" href="assets/css/A_index.css">
+<link rel="stylesheet" href="assets/css/cadastro.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet">
+<title>TV Taubaté | Registrar</title>
+{% endblock %}
+
+{% block body %}
+{% include "partials/header_inicial.html" %}
+<main>
+    <form class='form__cadastro' method="post" action="{{ url_for('cria_cadastro') }}">
+
+        <h1 class='form__cadastro-titulo'>Cadastrar</h1>
+
+        <h2 class='form__cadastro-email'>Email (Também será o seu ID):</h2>
+        <input class='form__cadastro-input' type="email" minlength="5" name="useremail" required
+               placeholder="exemplo@gmail.com"><br><br>
+
+        <h2 class='form__cadastro-user'>Usuário:</h2>
+        <input class='form__cadastro-input' type="user" minlength="5" name="user" required
+               placeholder="Seu Usuário" data-form-senha><br><br>
+        
+        <h2 class='form__cadastro-pass'>Senha:</h2>
+        <input class='form__cadastro-input' type="password" minlength="5" name="password" required
+               placeholder="********" data-form-confirma-senha><br><br>
+
+        <div class="container_senha-errada">
+
+        </div>
+
+
+
+        <p class='form__cadastro-link'><a href="{{ url_for('login') }}" > Já possui conta?</a></p>
+
+        <div class="botoes__acoes">
+            <input type="submit" value="Cadastrar" class='form__registro-botao'>
+            <input type="reset" value="Limpar" class='form__registro-botao'>
+        </div>
+
+    </form>
+
+    <!--<script src='{{ url_for("static", filename="assets/js/cadastro.js") }}'>
+
+    </script>-->
+</main>
+
+{% include "partials/rodape_governo.html" %}
+{% endblock %}
+
+    
+
+
+
+    

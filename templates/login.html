@@ -1,0 +1,28 @@
+{% extends "iniciais/templateIndex.html" %}
+{% block head %}
+    <link rel= "stylesheet" href="assets/css/A_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
+    <title>TV Taubaté | Registrar</title>
+{% endblock %}
+
+{% block body %}
+{% include "partials/header_inicial.html" %}
+
+    <main>
+        <form class='form__registro' action='/autenticar' method="post">
+            <h1 class='form__registro-titulo'>Entrar</h1>
+            <h2 class="form__registro-user">Usuario:</h2>
+            <input class='form__registro-input-user' type="email" name="id" placeholder="Email" required>
+            <h2 class="form__registro-pass">Senha:</h2>
+            <input class='form__registro-input-pass' type="password" name="password" placeholder="Senha" required>
+            <div class="links__form">
+                <p class='form__registro-link'><a href="{{ url_for('esqueci_senha') }}" >esqueci minha senha</a></p>
+        
+                <p class='form__registro-link'><a  href="{{ url_for('cadastro') }}">Cadastrar</a></p>
+            </div>
+            <button class='form__registro-botao'  type="submit" >Entrar</button>
+        </form>
+    </main>
+
+    {% include "partials/rodape_governo.html" %}
+{% endblock %}
